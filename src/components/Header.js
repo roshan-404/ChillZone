@@ -28,6 +28,13 @@ export default Header
 
 const HeaderContainer = styled.div`
     display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: var(--chillzone-color);
+    color: white;
 
 `;
 
