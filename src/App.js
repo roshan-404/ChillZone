@@ -7,17 +7,24 @@ import {
   Link
 } from "react-router-dom";
 import Header from './components/Header';
+import styled from 'styled-components'
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
       <Router>
       <>
+      <Header/>
+      <AppBody>
+        <Sidebar />
         <Switch>
           <Route path="/">
-            <Header/>
+            {/* chat */}
           </Route>
         </Switch>
+      </AppBody>
+        
       </>
     </Router>
     </div>
@@ -25,3 +32,9 @@ function App() {
 }
 
 export default App;
+
+const AppBody = styled.div`
+  display: flex;
+  height: 100vh;
+  
+`;
